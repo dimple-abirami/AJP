@@ -1,3 +1,9 @@
+/* 
+A Mathematics teacher asked the students to submit the assignment note one by one on the table and he restricted the number of submissions to 8.
+He has to correct the note by picking the note which is on top. Once he completed the correction of 4 notes then called the reg no of the student 
+to collect the note. After that he asked the next 8 students to submit the note. After each 4 of the notes are completed he calls the students to 
+collect until all the notes have been completed. Find appropriate collection class to implement this scenario
+*/
 import java.util.*;
 
 public class Assignment {
@@ -60,3 +66,48 @@ public class Assignment {
         
     }
 }
+
+/* Sample Input Output : 
+Enter the number of students : 12
+Eight Students can submit now...
+101
+Submitted students : [101]
+102
+Submitted students : [101, 102]
+103
+Submitted students : [101, 102, 103]
+104
+Submitted students : [101, 102, 103, 104]
+105
+Submitted students : [101, 102, 103, 104, 105]
+106
+Submitted students : [101, 102, 103, 104, 105, 106]
+107
+Submitted students : [101, 102, 103, 104, 105, 106, 107]
+108
+Submitted students : [101, 102, 103, 104, 105, 106, 107, 108]
+Evaluated for : 
+108
+107
+106
+105
+Remaining Students can submit now...
+109
+Submitted students : [101, 102, 103, 104, 109]
+110
+Submitted students : [101, 102, 103, 104, 109, 110]
+111
+Submitted students : [101, 102, 103, 104, 109, 110, 111]
+112
+Submitted students : [101, 102, 103, 104, 109, 110, 111, 112]
+Evaluated for : 
+112
+111
+110
+109
+Evaluated for : 
+104
+103
+102
+101
+*/
