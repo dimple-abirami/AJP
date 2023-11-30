@@ -1,4 +1,6 @@
-import java.util.*;
+/* A Science teacher wants to fill up the students' test marks in an application. Teacher enters the mark in the application based on Roll Number. 
+But the teacher wants to store the marks in an increasing order while the mark has been entered. Develop a java application to collect the mark and 
+immediately insert the mark in an increasing order with the help of List Collection.*/
 
 public class SortMarks {
     public static void main(String[] args) {
