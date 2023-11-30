@@ -1,6 +1,10 @@
-/* A Science teacher wants to fill up the students' test marks in an application. Teacher enters the mark in the application based on Roll Number. 
+/* 
+A Science teacher wants to fill up the students' test marks in an application. Teacher enters the mark in the application based on Roll Number. 
 But the teacher wants to store the marks in an increasing order while the mark has been entered. Develop a java application to collect the mark and 
-immediately insert the mark in an increasing order with the help of List Collection.*/
+immediately insert the mark in an increasing order with the help of List Collection.
+*/
+
+import java.util.*;
 
 public class SortMarks {
     public static void main(String[] args) {
@@ -16,3 +20,16 @@ public class SortMarks {
        }
     }
 }
+/* Sample Input Output : 
+Enter the number of students : 5 
+Enter the marks of student1 :45
+Marks of students : [45]
+Enter the marks of student2 :47
+Marks of students : [45, 47]
+Enter the marks of student3 :30
+Marks of students : [30, 45, 47]
+Enter the marks of student4 :43
+Marks of students : [30, 43, 45, 47]
+Enter the marks of student5 :50
+Marks of students : [30, 43, 45, 47, 50]
+*/
