@@ -3,3 +3,11 @@ A Company wants to develop an application to scan the network interface details 
 the host name and then examine the IP  address of host. After that it scans and prints all the possible network interface names found  in the 
 host. And then print the physical address (MAC) of the host. 
 */
+
+import java.util.*;
+import java.net.*;
+import java.io.*;
+
+public class networkInterface{
+
+}
