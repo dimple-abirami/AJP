@@ -8,6 +8,39 @@ import java.util.*;
 import java.net.*;
 import java.io.*;
 
-public class networkInterface{
+public class NetworkInterface {
+    public static void main(String[] args) {
+        String host;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Host name : ");
+        host = sc.nextLine();
 
+        try {
+            InetAddress address = InetAddress.getByName(host);
+            System.out.println("HostName : " + address.getHostName());
+            System.out.println("IP Address : " + address.getHostAddress());
+
+            Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
+            while (interfaces.hasMoreElements()) {
+                NetworkInterface network = interfaces.nextElement();
+                System.out.println("NetworkInterface : " + network.getName());
+
+                if (network != null && network.getInetAddresses().hasMoreElements()) {
+                    byte[] mac = network.getHardwareAddress();
+                    if (mac != null) {
+                        StringBuilder sb = new StringBuilder();
+                        for (int i = 0; i < mac.length; i++) {
+                            sb.append(String.format("%02x%s", mac[i], (i < mac.length - 1) ? "-" : ""));
+                        }
+                        System.out.println("MAC Address : " + sb.toString());
+                    }
+                }
+            }
+        } catch (UnknownHostException e) {
+            System.out.println("Could not find host IP address");
+        } catch (SocketException e) {
+            System.out.println("Error while retrieving network interfaces: " + e.getMessage());
+        }
+    }
 }
+
