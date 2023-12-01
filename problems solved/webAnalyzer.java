@@ -70,3 +70,13 @@ public class webAnalyzer {
         return matcher.find();
     }
 }
+
+/*
+Sample input and output : 
+
+Coding Standards Report:
+HTML5 Doctype: Present
+UTF-8 Charset in Meta Tag: Missing or not standard-compliant
+CSS Stylesheets: Present
+JavaScript Scripts: Present
+*/
